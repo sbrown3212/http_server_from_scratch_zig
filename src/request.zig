@@ -8,7 +8,7 @@ pub fn read_request(conn: Connection, buffer: []u8) !void {
 
 const Map = std.static_string_map.StaticStringMap;
 const MethodMap = Map(Method).initComptime(.{
-    .{ "GET", Method.Get },
+    .{ "GET", Method.GET },
 });
 
 pub const Method = enum {
